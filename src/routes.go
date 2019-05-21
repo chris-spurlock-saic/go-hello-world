@@ -21,6 +21,6 @@ func Router(w http.ResponseWriter, r *http.Request) {
 	cmd := parts[0]
 	switch cmd {
 	case "hello":
-		ServeJSON("Hello World!", w)
+		ServeJSON("Hello World 3!", w)
 	}
 }
