@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - REPOSITORY_URI=${REPO_URI:=893574838178.dkr.ecr.us-east-1.amazonaws.com/useeio/go-hello}
+      - REPOSITORY_URI=${REPO_URI:=893574838178.dkr.ecr.us-east-1.amazonaws.com/useeio/go-app}
       - IMAGE_TAG=${IMAGE_TAGP:=latest}
       - echo $REPOSITORY_URI
       - echo $IMAGE_TAG
